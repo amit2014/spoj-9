@@ -1,0 +1,3 @@
+package Classical;
+
+import java.io.*;import java.util.*;class L{J s=new J(System.in);public static void main(String[] args)throws Exception{L p=new L();p.b();}public void b()throws Exception{int T=s.nextInt();int[] t={1,1,4,4,2,1,1,4,4,2};int[][] G={{0},{1},{6,2,4,8},{1,3,9,7},{6,4},{5},{6},{1,7,9,3},{6,8,4,2},{1,9}};for(int c=0;c<T;c++){int a=s.nextInt()%10;int b=s.nextInt();if(b==0){System.out.println(1);continue;}System.out.println(G[a][b%t[a]]);}}class J{BufferedReader b;StringTokenizer t;public J(InputStream l){b=new BufferedReader(new InputStreamReader(l));}public int nextInt()throws Exception{if(t==null||!t.hasMoreTokens()){t=new StringTokenizer(b.readLine());}return Integer.parseInt(t.nextToken());}}}
